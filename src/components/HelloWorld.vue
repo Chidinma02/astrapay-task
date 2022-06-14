@@ -1,58 +1,129 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div class="">
+    <div class="row">
+      <div class="col-md-5 col-12 first-col">
+        <div class="container">
+          <div class="pl-5 pr-5 mar">
+            <h4 class="font-word">PEERCOVER</h4>
+            <div class="mt-5">
+              <h4 class="font-word">Car</h4>
+              <h5 class="font-word">Insurance</h5>
+            </div>
+            <div class="mt-5">
+              <h4 class="font-word">Prices from</h4>
+              <h3 class="font-word">N10,000</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 col-12 second-col">
+        <div class="container">
+          <div class="ml-5 mt-5 pt-4 second-second-col">
+            <h4 class="font-word h1-second-col">WELCOME BACK</h4>
+            <p class="p-font-word mt-4">Input your details to proceed</p>
+
+            <div class="mt-4">
+              <form>
+                <div class="mb-5">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                </div>
+                <p class="p-form mb-4">Forgot password ?</p>
+
+                <button
+                  type="button"
+                  class="btn button-for-second-col btn-success"
+                >
+                  Log In
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.p-form {
+  color: #00932b;
+  text-align: right;
+  font-weight: 300;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.first-col {
+  background-color: #00932b;
+  color: white;
+  text-align: left;
+  font-weight: bold !important;
+  height: 100vh;
 }
-a {
-  color: #42b983;
+.mar {
+  margin-top: 40% !important;
+}
+.font-word {
+  font-weight: bold;
+}
+.p-font-word {
+  text-align: left;
+}
+.h1-second-col {
+  color: #00932b;
+}
+input {
+  border: 1.4px solid black;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+input:focus {
+  border: 1.4px solid black;
+}
+::placeholder {
+  color: black;
+
+  font-weight: 500;
+}
+.button-for-second-col {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 750;
+  font-size: large;
+}
+.second-second-col {
+  margin-right: 25%;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .second-second-col {
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
 }
 </style>
